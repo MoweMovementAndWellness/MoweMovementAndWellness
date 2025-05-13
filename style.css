@@ -18,7 +18,7 @@ a {
 
 /* Navbar visibile e orizzontale */
 .navbar {
-  background-color: #83ffd5
+  background-color: #83ffd5;
   padding: 2rem 0;  /* Aumenta l'altezza della navbar */
   position: sticky;
   top: 0;
