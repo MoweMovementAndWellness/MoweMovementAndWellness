@@ -18,13 +18,15 @@ a {
 
 /* Navbar visibile e orizzontale */
 .navbar {
-  background-color: #22c55e; /* Colore del logo */
+  background-color: #ff0000; /* Cambia colore per testare */
   padding: 1rem 0;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 999;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
+
 
 .navbar-container {
   display: flex;
