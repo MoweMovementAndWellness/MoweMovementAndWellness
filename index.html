@@ -10,10 +10,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#servizi">Servizi</a>
+      <a href="#contatti">Contatti</a>
+      <a href="#instagram">Instagram</a>
+    </div>
+  </nav>
+
   <main class="container">
+
     <!-- Hero Section -->
     <section class="hero">
-      <img src="logo.png.png" alt="MoWe Logo" class="logo" />
+      <img src="logo.png" alt="MoWe Logo" class="logo" />
       <h1>Movement and Wellness</h1>
       <p>
         A Cautano (BN), MoWe è più di una semplice palestra: è uno spazio
@@ -40,12 +51,40 @@
       </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- Servizi -->
+    <section class="section" id="servizi">
+      <h2>Servizi offerti</h2>
+      <ul class="servizi">
+        <li>🏋️‍♂️ Corsi di functional training, mobilità, posturale</li>
+        <li>💪 Personal training su misura</li>
+        <li>🧘 Allenamenti individuali e di gruppo</li>
+        <li>🛠️ Attrezzature moderne e spazio accogliente</li>
+        <li>📊 Valutazioni e progressi monitorati</li>
+      </ul>
+    </section>
+
+    <!-- Contatti -->
+    <section class="section" id="contatti">
+      <h2>Contattaci</h2>
+      <p>📞 Telefono: <a href="tel:+393331112233">+39 333 111 2233</a></p>
+      <p>📧 Email: <a href="mailto:info@mowe.it">info@mowe.it</a></p>
+      <p>📸 Instagram: <a href="https://instagram.com/mowe.it" target="_blank">@mowe.it</a></p>
+    </section>
+
+    <!-- Instagram -->
+    <section class="section" id="instagram">
+      <h2>Ultimi post su Instagram</h2>
+      <!-- SnapWidget embed example (sostituibile con il tuo) -->
+      <iframe src="https://snapwidget.com/embed/123456" class="instagram-widget" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+    </section>
+
+    <!-- CTA -->
     <section class="cta">
       <h2>Unisciti al movimento</h2>
       <p>Scopri il potenziale del tuo corpo e della tua mente con MoWe.</p>
       <a href="mailto:info@mowe.it" class="btn">Contattaci</a>
     </section>
+
   </main>
 </body>
 </html>
