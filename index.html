@@ -1,0 +1,138 @@
+**index.html**
+```html
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MoWe - Movement and Wellness</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="logo.png" alt="MoWe Logo" class="logo" />
+      <h1>Movement and Wellness</h1>
+      <p>
+        A Cautano (BN), MoWe è più di una semplice palestra: è uno spazio
+        dedicato al movimento consapevole, al benessere fisico e alla crescita personale.
+      </p>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+      <div class="text">
+        <h2>La Storia di MoWe</h2>
+        <p>
+          Fondata da Pasquale Fusco, laureato in Scienze Motorie e appassionato
+          di sport, MoWe nasce nel gennaio 2022 con l'obiettivo di offrire un
+          ambiente professionale, motivante ed energico.
+        </p>
+      </div>
+      <div class="card">
+        <p>
+          Ogni allenamento è un passo verso la migliore versione di te stesso.
+          Con professionalità, passione ed energia positiva, trasformiamo il
+          movimento in crescita personale.
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <h2>Unisciti al movimento</h2>
+      <p>Scopri il potenziale del tuo corpo e della tua mente con MoWe.</p>
+      <a href="mailto:info@mowe.it" class="btn">Contattaci</a>
+    </section>
+  </main>
+</body>
+</html>
+```
+
+**style.css**
+```css
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+@media(min-width: 768px) {
+  .about {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.about .text {
+  flex: 1;
+}
+
+.about .card {
+  flex: 1;
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.cta {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #22c55e;
+  color: #000;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4ade80;
+}
