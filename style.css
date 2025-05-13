@@ -18,7 +18,7 @@ a {
 
 /* Navbar visibile e orizzontale */
 .navbar {
-  background-color: #22c55e; /* Colore del logo */
+  background-color: #83ffd5
   padding: 2rem 0;  /* Aumenta l'altezza della navbar */
   position: sticky;
   top: 0;
@@ -52,7 +52,7 @@ a {
 }
 
 .logo {
-  width: 300px;
+  width: 600px;
   margin-bottom: 1rem;
 }
 
