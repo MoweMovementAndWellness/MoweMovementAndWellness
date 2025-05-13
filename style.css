@@ -19,7 +19,7 @@ a {
 /* Navbar visibile e orizzontale */
 .navbar {
   background-color: #83ffd5;
-  padding: 2rem 0;  /* Aumenta l'altezza della navbar */
+  padding: 1rem 0;  /* Ridotto per dispositivi mobili */
   position: sticky;
   top: 0;
   z-index: 999;
@@ -30,18 +30,19 @@ a {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  flex-wrap: wrap;  /* Aggiunto per garantire che gli elementi si adattano su dispositivi piccoli */
 }
 
 .navbar-container a {
-  color: white;  /* Imposta il colore del testo a bianco */
+  color: white;
   font-weight: bold;
   text-decoration: none;
-  font-size: 1.2rem;  /* Puoi aumentare leggermente la dimensione del font */
+  font-size: 1.2rem;
   transition: color 0.3s ease;
 }
 
 .navbar-container a:hover {
-  color: #4ade80;  /* Cambia colore al passaggio del mouse */
+  color: #4ade80;
 }
 
 
@@ -52,7 +53,8 @@ a {
 }
 
 .logo {
-  width: 600px;
+  width: 80%;  /* Cambiato da px a % per la responsività */
+  max-width: 600px;
   margin-bottom: 1rem;
 }
 
@@ -144,4 +146,50 @@ p {
 
 .btn:hover {
   background-color: #4ade80;
+}
+
+/* Media Queries per dispositivi mobili */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .navbar-container a {
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .logo {
+    width: 80%;
+    max-width: 400px;  /* Ridotto per dispositivi più piccoli */
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .about {
+    padding: 2rem 0;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .servizi li {
+    font-size: 1rem;
+  }
+
+  .cta {
+    padding: 3rem 1rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1.8rem;
+  }
 }
