@@ -175,13 +175,25 @@ p {
   visibility: visible;
 }
 
-/* === LOGO CONTAINER === */
+/* === MENU ICON === */
+.menu-icon {
+  position: absolute;
+  top: 15px;
+  left: 70px; /* distanza dal logo, regola in base a quanto spazio vuoi */
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
 .logo-container {
   position: fixed;
   top: 10px;
   left: 10px;
   z-index: 1100;
+  display: flex;
+  align-items: center;
 }
+
 
 .clickable-logo {
   width: 180px;
