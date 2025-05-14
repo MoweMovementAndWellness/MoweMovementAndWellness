@@ -60,9 +60,9 @@
 
       <!-- Dettagli palestra -->
       <div class="location-details">
-        <p><strong>Indirizzo:</strong> Via Esempio, 123, Città, Nazione</p>
-        <p><strong>Telefono:</strong> +39 012 3456789</p>
-        <p><strong>Orari:</strong> Lunedì - Venerdì: 9:00 - 19:00</p>
+        <p><strong>Indirizzo:</strong> Via Luciarco, Cautano(BN), Italia</p>
+        <p><strong>Telefono:</strong> +39 3453561292</p>
+        <p><strong>Orari:</strong> Lunedì - Sabato: 8:00 - 21:00</p>
       </div>
     </section>
   </section>
@@ -81,16 +81,16 @@
   }
 
   // Leaflet Map - inserisci le coordinate reali della tua palestra qui
-  var map = L.map('map').setView([41.141601681101314, 14.641625879610373], 15); // Milano centro di esempio
+  var map = L.map('map').setView([41.08298, 14.38299], 15); // Milano centro di esempio
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
 
-L.marker([41.141601681101314,14.641625879610373]).addTo(map)
+L.marker([41.08298,14.38299]).addTo(map)
   .bindPopup(`
     <strong>MoWe Palestra</strong><br>
-    <a href="https://www.google.com/maps?q=41.141601681101314,14.641625879610373" 
+    <a href="https://www.google.com/maps?q=41.08298,14.38299" 
        target="_blank" 
        style="color: #22c55e; text-decoration: underline;">
        Apri su Google Maps
