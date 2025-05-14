@@ -169,12 +169,12 @@ p {
   z-index: 900;
 }
 
-
 .overlay.active {
   opacity: 1;
   visibility: visible;
 }
 
+/* Menu icon */
 .menu-icon {
   position: static;
   font-size: 2.5rem;
@@ -189,15 +189,27 @@ p {
   align-items: center;
 }
 
+/* === LOGO e barra fissa in cima === */
 .logo-container {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  z-index: 1100;
+  position: fixed; /* Fissa il logo */
+  top: 0;
+  left: 0;
+  z-index: 1100; /* Assicurati che il logo sia sopra gli altri contenuti */
   display: flex;
   align-items: center;
+  padding: 1rem; /* Spazio attorno al logo */
+  width: 100%; /* Occupa tutta la larghezza della finestra */
+  background-color: #000; /* Sfondo scuro per il logo */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombra per un effetto elegante */
 }
 
+.clickable-logo {
+  width: 180px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* === INSTAGRAM CONTAINER === */
 .instagram-container {
   width: 100%;
   max-width: 100%;
@@ -216,15 +228,6 @@ p {
   border: none;
   transform: scale(1);
   transform-origin: top left;
-}
-
-
-
-
-.clickable-logo {
-  width: 180px;
-  height: auto;
-  cursor: pointer;
 }
 
 /* === MEDIA QUERIES === */
@@ -259,5 +262,10 @@ p {
 
   .btn {
     padding: 0.8rem 1.8rem;
+  }
+
+  /* Aggiungi spazio sopra per il logo fisso */
+  .container {
+    padding-top: 120px; /* Riserva spazio per il logo e la barra */
   }
 }
