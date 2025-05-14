@@ -151,6 +151,10 @@ p {
   background-color: #eee;
 }
 
+.sidebar a:first-child {
+  margin-top: 40px;
+}
+
 /* === OVERLAY === */
 .overlay {
   position: fixed;
@@ -164,6 +168,7 @@ p {
   transition: opacity 0.3s ease;
   z-index: 900;
 }
+
 
 .overlay.active {
   opacity: 1;
@@ -179,7 +184,7 @@ p {
 }
 
 .clickable-logo {
-  width: 500px;
+  width: 180px;
   height: auto;
   cursor: pointer;
 }
