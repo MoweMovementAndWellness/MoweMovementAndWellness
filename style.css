@@ -276,8 +276,8 @@ iframe {
     padding: 0.8rem 1.8rem;
   }
 
-  /* Aggiungi spazio sopra per il logo fisso */
-  .container {
-    padding-top: 120px; /* Riserva spazio per il logo e la barra */
-  }
+.container {
+  padding: 120px 1rem 2rem 1rem; /* top, right, bottom, left */
+}
+
 }
