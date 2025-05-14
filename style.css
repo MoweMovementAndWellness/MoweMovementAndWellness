@@ -176,30 +176,26 @@ p {
 }
 
 .menu-icon {
-  position: absolute;
-  top: 10px;  /* Allineato al logo */
-  left: 210px;  /* Posizione orizzontale modificata per far spazio al logo */
-  font-size: 2rem;
+  position: static;
+  font-size: 2.5rem;
   color: white;
   cursor: pointer;
-  width: 180px;  /* Stessa larghezza del logo */
-  height: auto;  /* Imposta l'altezza in modo che l'icona si ridimensioni proporzionalmente */
-  border: 2px solid #22c55e;  /* Linea verde */
-  border-radius: 5px; /* Angoli arrotondati */
-  padding: 10px; /* Spazio intorno all'icona */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: 1rem;
+  background: none;
+  padding: 0;
 }
+
+
 
 .logo-container {
   position: fixed;
   top: 10px;
-  left: 10px;  /* Aumenta il valore di left per spostare il logo a sinistra */
+  left: 10px;
   z-index: 1100;
   display: flex;
   align-items: center;
 }
+
 
 
 .clickable-logo {
