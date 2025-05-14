@@ -1,3 +1,4 @@
+/* === BASE === */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -16,44 +17,14 @@ a {
   margin: auto;
 }
 
-/* Navbar visibile e orizzontale */
-.navbar {
-  background-color: #24f8c9;
-  padding: 1rem 0;  /* Ridotto per dispositivi mobili */
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;  /* Aggiunto per garantire che gli elementi si adattano su dispositivi piccoli */
-}
-
-.navbar-container a {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
-}
-
-.navbar-container a:hover {
-  color: #000;
-}
-
-
-/* Hero */
+/* === HERO === */
 .hero {
   text-align: center;
   padding: 4rem 1rem;
 }
 
 .logo {
-  width: 80%;  /* Cambiato da px a % per la responsività */
+  width: 80%;
   max-width: 600px;
   margin-bottom: 1rem;
 }
@@ -70,19 +41,12 @@ p {
   margin: 0 auto;
 }
 
-/* About */
+/* === ABOUT === */
 .about {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 4rem 0;
-}
-
-@media(min-width: 768px) {
-  .about {
-    flex-direction: row;
-    align-items: flex-start;
-  }
 }
 
 .about .text {
@@ -97,7 +61,14 @@ p {
   box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
 
-/* Section generiche */
+@media (min-width: 768px) {
+  .about {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* === SECTION GENERICHE === */
 .section {
   padding: 3rem 1rem;
   text-align: center;
@@ -118,7 +89,7 @@ p {
   font-size: 1.1rem;
 }
 
-/* Instagram */
+/* === INSTAGRAM === */
 .instagram-widget {
   width: 100%;
   height: 300px;
@@ -126,7 +97,7 @@ p {
   margin-top: 1rem;
 }
 
-/* CTA */
+/* === CTA === */
 .cta {
   text-align: center;
   padding: 4rem 1rem;
@@ -148,25 +119,79 @@ p {
   background-color: #4ade80;
 }
 
-/* Media Queries per dispositivi mobili */
+/* === SIDEBAR MENU === */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 200px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar a {
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #eee;
+}
+
+/* === OVERLAY === */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 900;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* === LOGO CONTAINER === */
+.logo-container {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1100;
+}
+
+.clickable-logo {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* === MEDIA QUERIES === */
 @media (max-width: 768px) {
-  .navbar-container {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem 0;
-  }
-
-  .navbar-container a {
-    font-size: 1rem;
-  }
-
   .hero {
     padding: 2rem 1rem;
   }
 
   .logo {
-    width: 80%;
-    max-width: 400px;  /* Ridotto per dispositivi più piccoli */
+    max-width: 400px;
   }
 
   h1 {
