@@ -87,9 +87,17 @@
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
 
-  L.marker([41.141601681101314,14.641625879610373]).addTo(map)
-    .bindPopup('MoWe Palestra')
-    .openPopup();
+L.marker([41.141601681101314,14.641625879610373]).addTo(map)
+  .bindPopup(`
+    <strong>MoWe Palestra</strong><br>
+    <a href="https://www.google.com/maps?q=41.141601681101314,14.641625879610373" 
+       target="_blank" 
+       style="color: #22c55e; text-decoration: underline;">
+       Apri su Google Maps
+    </a>
+  `)
+  .openPopup();
+
 </script>
 
 </body>
