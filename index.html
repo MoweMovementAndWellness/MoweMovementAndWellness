@@ -11,111 +11,39 @@
 </head>
 <body>
 
-<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;93f52834981659dd&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.4.0-1-g37f21b1&quot;,&quot;token&quot;:&quot;f3757b384988486baf771b9b3045e8e5&quot;}" crossorigin="anonymous"></script>
-
-  
-<!-- Sidebar Menu -->
 <div id="sidebar" class="sidebar">
-  <a href="#servizi">Servizi</a>
-  <a href="#contatti">Contatti</a>
-  <a href="#instagram">Instagram</a>
-  <a href="#shop">Shop</a>
+  <a href="servizi.html">Servizi</a>
+  <a href="contatti.html">Contatti</a>
+  <a href="instagram.html">Instagram</a>
+  <a href="shop.html">Shop</a>
 </div>
-  <div id="overlay" class="overlay" onclick="closeSidebar()"></div>
-  
-<!-- Logo con l'icona del menu -->
+<div id="overlay" class="overlay" onclick="closeSidebar()"></div>
+
 <div class="logo-container">
   <img src="logo2.png" alt="MoWe Logo2" class="logo clickable-logo" onclick="toggleSidebar()" />
-  <!-- Icona del menu -->
   <div class="menu-icon" onclick="toggleSidebar()">☰</div>
 </div>
 
+<main class="container">
+  <section class="hero">
+    <h1>Movement and Wellness</h1>
+    <p>
+      A Cautano (BN), MoWe è più di una semplice palestra: è uno spazio
+      dedicato al movimento consapevole, al benessere fisico e alla crescita personale.
+    </p>
+  </section>
 
-
-
-  <main class="container">
-
-    <!-- Hero Section -->
-    <section class="hero">
-      <h1>Movement and Wellness</h1>
-      <p>
-        A Cautano (BN), MoWe è più di una semplice palestra: è uno spazio
-        dedicato al movimento consapevole, al benessere fisico e alla crescita personale.
-      </p>
-    </section>
-
-    <!-- About Section -->
-    <section class="about">
-      <div class="text">
-        <h2>La Storia di MoWe</h2>
-        <p>
-          Fondata da Pasquale Fusco, laureato in Scienze Motorie e appassionato
-          di sport, MoWe nasce nel gennaio 2022 con l'obiettivo di offrire un
-          ambiente professionale, motivante ed energico.
-        </p>
-      </div>
-      <div class="card">
-        <p>
-          Ogni allenamento è un passo verso la migliore versione di te stesso.
-          Con professionalità, passione ed energia positiva, trasformiamo il
-          movimento in crescita personale.
-        </p>
-      </div>
-    </section>
-
-    <!-- Servizi -->
-    <section class="section" id="servizi">
-      <h2>Servizi offerti</h2>
-      <ul class="servizi">
-        <li>🏋️‍♂️ Corsi di functional training, mobilità, posturale</li>
-        <li>💪 Personal training su misura</li>
-        <li>🧘 Allenamenti individuali e di gruppo</li>
-        <li>🛠️ Attrezzature moderne e spazio accogliente</li>
-        <li>📊 Valutazioni e progressi monitorati</li>
-      </ul>
-    </section>
-
-    <!-- Contatti -->
-    <section class="section" id="contatti">
-      <h2>Contattaci</h2>
-      <p>📞 Telefono: <a href="tel:+393331112233">+39 333 111 2233</a></p>
-      <p>📧 Email: <a href="mailto:info@mowe.it">info@mowe.it</a></p>
-      <p>📸 Instagram: <a href="https://www.instagram.com/mowe.movementandwellness" target="_blank">https://www.instagram.com/mowe.movementandwellness</a></p>
-    </section>
-
-    <!-- Instagram -->
-    <section class="section" id="instagram">
-      <h2>Ultimi post su Instagram</h2>
-      <!-- SnapWidget embed example (sostituibile con il tuo) -->
-<!-- SnapWidget -->
-<!-- SnapWidget -->
-<iframe src="https://snapwidget.com/embed/1096379" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:930px; height:930px" title="Posts from Instagram"></iframe>
-  
-    </section>
-
-    <!-- CTA -->
-    <section class="cta">
-      <h2>Unisciti al movimento</h2>
-      <p>Scopri il potenziale del tuo corpo e della tua mente con MoWe.</p>
-      <a href="mailto:info@mowe.it" class="btn">Contattaci</a>
-    </section>
-
-        <!-- Shop -->
-    <section class="section" id="shop">
-      <h2>Shop</h2>
-
-    </section>
-
-  </main>
-</body>
-</html>
+  <section class="cta">
+    <h2>Unisciti al movimento</h2>
+    <p>Scopri il potenziale del tuo corpo e della tua mente con MoWe.</p>
+    <a href="mailto:info@mowe.it" class="btn">Contattaci</a>
+  </section>
+</main>
 
 <script>
   function toggleSidebar() {
-    const sidebar = document.getElementById("sidebar");
-    const overlay = document.getElementById("overlay");
-    sidebar.classList.toggle("active");
-    overlay.classList.toggle("active");
+    document.getElementById("sidebar").classList.toggle("active");
+    document.getElementById("overlay").classList.toggle("active");
   }
 
   function closeSidebar() {
@@ -124,3 +52,5 @@
   }
 </script>
 
+</body>
+</html>
