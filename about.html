@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chi Siamo - MoWe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="sidebar" class="sidebar">
+  <a href="index.html">Home</a>
+  <a href="servizi.html">Servizi</a>
+  <a href="contatti.html">Contatti</a>
+  <a href="instagram.html">Instagram</a>
+  <a href="shop.html">Shop</a>
+</div>
+<div id="overlay" class="overlay" onclick="closeSidebar()"></div>
+
+<div class="logo-container">
+  <img src="logo2.png" alt="MoWe Logo2" class="logo clickable-logo" onclick="toggleSidebar()" />
+  <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+</div>
+
+<main class="container">
+  <section class="about">
+    <div class="text">
+      <h2>La Storia di MoWe</h2>
+      <p>
+        Fondata da Pasquale Fusco, laureato in Scienze Motorie e appassionato di sport, MoWe nasce nel gennaio 2022 con l'obiettivo di offrire un ambiente professionale, motivante ed energico.
+      </p>
+    </div>
+    <div class="card">
+      <p>
+        Ogni allenamento è un passo verso la migliore versione di te stesso. Con professionalità, passione ed energia positiva, trasformiamo il movimento in crescita personale.
+      </p>
+    </div>
+  </section>
+</main>
+
+<script>
+  function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("active");
+    document.getElementById("overlay").classList.toggle("active");
+  }
+
+  function closeSidebar() {
+    document.getElementById("sidebar").classList.remove("active");
+    document.getElementById("overlay").classList.remove("active");
+  }
+</script>
+</body>
+</html>
