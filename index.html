@@ -81,16 +81,16 @@
   }
 
   // Leaflet Map - inserisci le coordinate reali della tua palestra qui
-  var map = L.map('map').setView([41.08298, 14.38299], 15); // Milano centro di esempio
+  var map = L.map('map').setView([41.13736596578461, 14.642314362058128], 15); // Milano centro di esempio
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
 
-L.marker([41.08298,14.38299]).addTo(map)
+L.marker([41.13736596578461, 14.642314362058128]).addTo(map)
   .bindPopup(`
     <strong>MoWe Palestra</strong><br>
-    <a href="https://www.google.com/maps?q=41.08298,14.38299" 
+    <a href="https://www.google.com/maps?q=41.13736596578461, 14.642314362058128" 
        target="_blank" 
        style="color: #22c55e; text-decoration: underline;">
        Apri su Google Maps
