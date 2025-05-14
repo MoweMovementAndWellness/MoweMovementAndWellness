@@ -181,11 +181,13 @@ p {
   color: white;
   cursor: pointer;
   margin-left: 1rem;
-  background: none;
-  padding: 0;
+  background: none; /* Rimuove lo sfondo */
+  padding: 0; /* Rimuove lo spazio interno */
+  border: none; /* Rimuove il bordo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
 
 .logo-container {
   position: fixed;
@@ -195,6 +197,7 @@ p {
   display: flex;
   align-items: center;
 }
+
 .instagram-container {
   width: 100%;
   max-width: 100%;
