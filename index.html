@@ -5,16 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MoWe - Movement and Wellness</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <div id="sidebar" class="sidebar">
+  <a href="about.html">Chi Siamo</a>
   <a href="servizi.html">Servizi</a>
   <a href="contatti.html">Contatti</a>
-  <a href="instagram.html">Instagram</a>
   <a href="shop.html">Shop</a>
 </div>
 <div id="overlay" class="overlay" onclick="closeSidebar()"></div>
@@ -28,8 +26,7 @@
   <section class="hero">
     <h1>Movement and Wellness</h1>
     <p>
-      A Cautano (BN), MoWe è più di una semplice palestra: è uno spazio
-      dedicato al movimento consapevole, al benessere fisico e alla crescita personale.
+      A Cautano (BN), MoWe è più di una semplice palestra: è uno spazio dedicato al movimento consapevole, al benessere fisico e alla crescita personale.
     </p>
   </section>
 
@@ -37,6 +34,12 @@
     <h2>Unisciti al movimento</h2>
     <p>Scopri il potenziale del tuo corpo e della tua mente con MoWe.</p>
     <a href="mailto:info@mowe.it" class="btn">Contattaci</a>
+  </section>
+
+  <!-- Instagram -->
+  <section class="section">
+    <h2>Ultimi post su Instagram</h2>
+    <iframe src="https://snapwidget.com/embed/1096379" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:930px; height:930px" title="Instagram"></iframe>
   </section>
 </main>
 
@@ -51,6 +54,5 @@
     document.getElementById("overlay").classList.remove("active");
   }
 </script>
-
 </body>
 </html>
