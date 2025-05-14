@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop - MoWe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="sidebar" class="sidebar">
+  <a href="index.html">Home</a>
+  <a href="about.html">Chi Siamo</a>
+  <a href="servizi.html">Servizi</a>
+  <a href="contatti.html">Contatti</a>
+  <a href="instagram.html">Instagram</a>
+</div>
+<div id="overlay" class="overlay" onclick="closeSidebar()"></div>
+
+<div class="logo-container">
+  <img src="logo2.png" alt="MoWe Logo2" class="logo clickable-logo" onclick="toggleSidebar()" />
+  <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+</div>
+
+<main class="container">
+  <section class="section">
+    <h2>Shop</h2>
+    <p>Prossimamente in arrivo il nostro store online con abbigliamento e attrezzatura firmata MoWe!</p>
+  </section>
+</main>
+
+<script>
+  function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("active");
+    document.getElementById("overlay").classList.toggle("active");
+  }
+
+  function closeSidebar() {
+    document.getElementById("sidebar").classList.remove("active");
+    document.getElementById("overlay").classList.remove("active");
+  }
+</script>
+</body>
+</html>
